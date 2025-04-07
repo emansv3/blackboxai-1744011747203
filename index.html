@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasketBros - Elevate Your Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900 text-white p-4 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span class="text-orange-500">Basket</span>Bros
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-orange-500">Home</a>
+                <a href="#features" class="hover:text-orange-500">Features</a>
+                <a href="#pricing" class="hover:text-orange-500">Pricing</a>
+                <a href="about.html" class="hover:text-orange-500">About</a>
+                <a href="blog.html" class="hover:text-orange-500">Blog</a>
+                <a href="contact.html" class="hover:text-orange-500">Contact</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="text-white hover:text-orange-500"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white hover:text-orange-500"><i class="fab fa-instagram"></i></a>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-white">
+        <video autoplay muted loop class="hero-video">
+            <source src="https://player.vimeo.com/external/371751846.sd.mp4?s=6da1dd0d8a9d1c7a7b3e5e78b5d7c5b3e5e78b5d&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+        </video>
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="container mx-auto px-4 z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Elevate Your Basketball Game</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Training Programs | Skill Development | Community Challenges</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#pricing" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">Start Free Trial</a>
+                <a href="#features" class="bg-transparent hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 border-2 border-white rounded-full transition duration-300">View Plans</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-orange-500 text-5xl mb-4">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Professional Coaching</h3>
+                    <p class="text-gray-600">Learn from NBA-level trainers with personalized video feedback on your technique.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-orange-500 text-5xl mb-4">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Customized Drills</h3>
+                    <p class="text-gray-600">Get drills tailored to your position, skill level, and available equipment.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-orange-500 text-5xl mb-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Performance Analytics</h3>
+                    <p class="text-gray-600">Track your progress with detailed stats and improvement metrics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Simple, Transparent Pricing</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Basic</h3>
+                    <p class="text-gray-600 mb-4">For casual players</p>
+                    <div class="text-4xl font-bold mb-4">$19.99<span class="text-lg text-gray-500">/month</span></div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 5 Drills per week</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Community Challenges</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Basic Analytics</li>
+                    </ul>
+                    <button class="w-full bg-gray-800 hover:bg-gray-900 text-white py-2 px-4 rounded">Get Started</button>
+                </div>
+                <div class="border-2 border-orange-500 rounded-lg p-6 transform scale-105 shadow-lg">
+                    <div class="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full inline-block mb-2">MOST POPULAR</div>
+                    <h3 class="text-xl font-bold mb-2">Pro</h3>
+                    <p class="text-gray-600 mb-4">For serious players</p>
+                    <div class="text-4xl font-bold mb-4">$29.99<span class="text-lg text-gray-500">/month</span></div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Unlimited Drills</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Video Analysis</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Advanced Analytics</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Weekly Coach Q&A</li>
+                    </ul>
+                    <button class="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded">Get Started</button>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Elite</h3>
+                    <p class="text-gray-600 mb-4">For competitive athletes</p>
+                    <div class="text-4xl font-bold mb-4">$49.99<span class="text-lg text-gray-500">/month</span></div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Everything in Pro</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 1-on-1 Coaching</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Custom Training Plan</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Priority Support</li>
+                    </ul>
+                    <button class="w-full bg-gray-800 hover:bg-gray-900 text-white py-2 px-4 rounded">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><span class="text-orange-500">Basket</span>Bros</h3>
+                    <p class="text-gray-400">Elevating basketball skills through innovative training programs.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="contact.html" class="text-orange-500 hover:text-orange-400">Contact Us</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 BasketBros. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
